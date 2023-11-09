@@ -1,0 +1,57 @@
+/* Import variables */
+/* Nesting */
+.navbar {
+  background-color: aqua;
+}
+.navbar:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+.navbar .menu {
+  color: black;
+}
+.navbar .menu li {
+  padding: 50px;
+}
+
+/* Inheritace */
+h1, .special {
+  color: green;
+  font-style: italic;
+  background-color: orange;
+  font-size: 32px;
+}
+
+.special {
+  border: 4px dotted blue;
+}
+
+/* Mixin */
+.item-one {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  border-color: red;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+.item-two {
+  color: aqua;
+  background-color: gray;
+  font-size: 40px;
+  border-color: blue;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+.item-four {
+  color: green;
+  background-color: blue;
+  font-size: 60px;
+  border-color: yellow;
+  border-style: dashed;
+  border-width: 5px;
+}
+
+/*# sourceMappingURL=sass-styles.css.map */

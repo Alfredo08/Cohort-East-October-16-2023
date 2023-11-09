@@ -1,0 +1,89 @@
+/* Styles for mobile devices and above */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo > img{
+    width: 50%;
+}
+
+.navbar, .menu{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+}
+
+.menu{
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+/* Styles for tablets and above */
+@media only screen and (min-width: 600px){
+    header{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social{
+        gap: 100px;
+    }
+}
+
+/* Styles fo largers screens */
+@media only screen and (min-width: 992px){
+    .menu{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        gap: 30px;
+    }
+    
+    .hamburger{
+        display: none;
+    }
+
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .product{
+        flex: 1;
+    }
+    
+
+    .social{
+        justify-content: space-around;
+    }
+}
